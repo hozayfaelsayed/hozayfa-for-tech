@@ -1,16 +1,4 @@
-// let loader = document.querySelector(".spinner");
 
-// window.addEventListener("load",function () {
-
-//     loader.style.display = "none";
-// }); 
-
-
-
-// var loader = document.querySelector(".spinner");
-// window.addEventListener("onload", function() {
-// loader.style.display = "None";
-// });
 function startLoader() {
     const loader = document.querySelector(".spinner");
   
