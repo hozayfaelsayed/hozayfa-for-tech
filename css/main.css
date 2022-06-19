@@ -60,10 +60,13 @@ ul .insta {
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgb(184,135,95);
+    background: rgb(110,168,136);
+    background: linear-gradient(90deg, rgba(110,168,136,1) 23%, rgba(203,137,148,1) 83%); 
     z-index: 99;
     position: fixed;
+    transition: 0.5s cubic-bezier(1, 0.01, 0.29, 1.01);
 }
+
 .lds-ellipsis {
     display: inline-block;
     position: relative;
@@ -633,7 +636,7 @@ text-align: left;
 @media(max-width:480px){
     .footer .row .pay {
         max-width: 260px !important;
-        margin: 0 auto !important;
+        margin: 0 auto !important; 
     }
     .footer .row p {
         max-width: 250px !important;
