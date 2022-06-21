@@ -185,11 +185,8 @@
 
     /*start header  */
     .header{
-        min-height: calc(100vh - 66px);
         width: 100vw ;
         margin: 0 auto;
-        
-        
     }
     @media(max-width:320px){
     .header .header-img {
@@ -306,73 +303,80 @@
 
     
 
-    /*start section2 */
-    .section2 {
-        height:auto;
-    }
+    /*start section 1 */
+    .section1 {
+        background-image: url("../img/section1.png");
+       background-size:  cover;
+       background-repeat: no-repeat;
+       transform: translateY(-50px);
+       min-height: 902px;
 
+    }
     @media(max-width:767px){
-        .section2 {
+        .section1 {
             padding-bottom: 60px !important;
         }
 
-        .section2 .intro  {
-            transform: translateY(60px) !important;
+        .section1 .intro  {
+            margin-top: 70px !important;
+               
         }
-        .section2 .intro-text {
+        .section1 .intro-text {
             padding-top:0 !important;
+            margin-bottom: 60px;
 
         }
 
     }
     @media(max-width:575px) {
-        .section2 .img3 {
+        .section1 .img3 {
             max-width: 250px !important;
         }
     }
     @media(min-width:576px) and (max-width:767px){
-        .section2 .img3 {
+        .section1 .img3 {
             max-width: 480px !important;
         }
     }
     @media(min-width:768px) and (max-width:991px){
-        .section2 .img3 {
+        .section1 .img3 {
         max-width:500px !important;
 
         }
     }
 
     @media(min-width:992px) and (max-width:1199px){
-        .section2 .img3 {
+        .section1 .img3 {
             max-width:650px !important;
         }
     }
     @media(min-width:1200px) and (max-width:1399px){
-        .section2 .img3 {
+        .section1 .img3 {
             max-width:740px !important;
         }
     }
-    .section2 .intro {
-    transform: translateY(-100px);
+    .section1 .intro {
+    transform: translateY(215px);
     }
-    .section2 .img3 {
+    .section1 .img3 {
         height: auto;
         width: 850px;
         overflow: hidden;
     }
-    .section2 .intro-text {
+    .section1 .intro-text {
         padding-right: 60px;
         max-width: 490px;
         padding-top: 130px;
 
     }
-    .section2 .intro-text h6 {
+    .section1 .intro-text h6 {
         color: #dc3545 !important;
         max-width: 195px;
         font-weight: bold;
         font-size:20px;
     }
-
+    /* end section 1 */
+/* start section 2 */
 
     .section2 .icon div svg {
     border: 3px solid rgba(241, 196, 15,0.9);
@@ -389,7 +393,6 @@
     .our-services {
         background-image: url("../img/test22.svg");
         background-repeat: no-repeat;
-        height: 1000px;
         background-size: cover !important;
         height: 1377px;
     }
@@ -415,15 +418,38 @@
             margin-top: 60px;
         }
     }
+   
     /* media screen */
     @media(max-width:480px){
-        .our-services .container .develop {
-            max-width: 300px !important;
+        .our-services .container #developing {
+            max-width: 205px !important;
+            
         }
+        .our-services .container #marketing {
+            max-width: 250px !important;
+        }  
+        .our-services .container #dev-apps {
+            max-width: 250px !important;
+            
+        }
+        .our-services .container #design {
+            max-width: 250px !important;
+           
+        }
+        .our-services .container #tech {
+            max-width: 455px !important;
+            transform: translateX(85px);
+            
+        }
+        .our-services .container #solve {
+            max-width: 455px !important;
+            transform: translateX(65px);
+            
+        }
+        .our-services .container .develop {
+            display: block !important;
+            margin: auto !important;
 
-        .our-services .container .d-img {
-            max-width: 372px !important;
-            transform: translateX(50px) !important;
         }
         .our-services .container .card_body h5{
         text-align: center;
@@ -437,27 +463,61 @@
         }
 
     }
+
     @media(min-width:481px) and (max-width:575px){
-        .our-services .container .develop {
-            transform: translateX(12px) !important;
-            max-width: 210px !important;
+        .our-services .container #developing {
+            max-width: 205px !important;
+            transform: translate(15px,53px);
         }
-        .our-services .container .d-img {
-            transform: translateX(150px) !important;
-        } 
+        .our-services .container #marketing {
+            max-width: 250px !important;
+            transform: translate(65px,20px)      
+        }
+        .our-services .container #dev-apps {
+            max-width: 250px !important;
+            transform: translate(40px,48px);
+        }
+        .our-services .container #design {
+            max-width: 250px !important;
+            transform: translate(55px,35px);
+        }
+        .our-services .container #tech {
+            max-width: 444px !important;
+            transform: translate(220px,35px);
+        }
+        .our-services .container #solve {
+            max-width: 400px !important;
+            transform: translate(150px,17px);
+        }
         .our-services .container .card_body {
             max-width: 450px !important;
             padding-right: 200px !important;
         }
     }
     @media(min-width:576px) and (max-width:767px){  
-        
-        .our-services .container .develop {
-        max-width: 270px !important;
+        .our-services .container #developing {
+            max-width: 285px !important;
+            transform: translate(15px,17px);
         }
-        .our-services .container .d-img{
-            max-width: 510px !important;
-            transform: translateX(195px);
+        .our-services .container #marketing {
+            max-width: 300px !important;
+            transform: translate(30px,-6px);
+        }
+        .our-services .container #dev-apps {
+            max-width: 300px !important;
+            transform: translate(0,17px);
+        }
+        .our-services .container #design {
+            max-width: 300px !important;
+            transform: translate(35px,17px);
+        }
+        .our-services .container #tech {
+            max-width: 535px !important;
+            transform: translate(235px,17px);
+        }
+        .our-services .container #solve {
+            max-width: 500px !important;
+            transform: translate(165px,17px);
         }
         .our-services .container .card_body {
             width: 400px !important;
@@ -467,12 +527,29 @@
     }
 
     @media(min-width:768px) and (max-width:991px){
-        .our-services .container .develop {
+        .our-services .container #developing {
             max-width: 285px !important;
+            transform: translate(-8px,17px);
         }
-        .our-services .container .d-img {
-            max-width: 485px !important;
-            transform: translateX(128px);
+        .our-services .container #marketing {
+            max-width: 300px !important;
+            transform: translate(20px,-6px);
+        }
+        .our-services .container #dev-apps {
+            max-width: 300px !important;
+            transform: translate(-15px,17px);
+        }
+        .our-services .container #design {
+            max-width: 300px !important;
+            transform: translate(5px,17px);
+        }
+        .our-services .container #tech {
+            max-width: 535px !important;
+            transform: translate(200px,17px);
+        }
+        .our-services .container #solve {
+            max-width: 500px !important;
+            transform: translate(140px,17px);
         }
         .our-services .container .card_body {
             width: 400px !important;
@@ -487,12 +564,30 @@
         .our-services {
             margin-bottom: 50px !important;
         }
-        .our-services .container .develop {
-            transform: translateX(28px) !important;
+        .our-services .container #developing {
+            max-width: 255px !important;
+            transform: translateY(35px);    
+            }
+        .our-services .container #marketing {
+            max-width: 285px !important;
+            transform: translate(35px, 25px);
         }
-        .our-services .container .d-img {
-            width: 450px !important;
-            transform: translateX(150px) !important;
+        .our-services .container #design {
+            max-width: 260px !important;
+            transform: translateY(45px);
+        }
+        .our-services .container #dev-apps {
+            max-width: 280px !important;
+            transform: translateY(45px);
+
+        }
+        .our-services .container #tech {
+            max-width: 460px !important;
+            transform: translate(170px, 50px);
+        }
+        .our-services .container #solve {
+            transform: translate(105px,45px) !important;
+            max-width: 420px !important;
         }
         .our-services .container .card_body {
             width: 360px !important;
@@ -500,14 +595,33 @@
         }
         .our-services .container .card_body p {
             max-width: 240px !important;
+
            
         }
     }
 
     @media(min-width:1200px) and (max-width:1399px){
-        .our-services .container .d-img {
-            width: 450px !important;
-            transform: translateX(128px) !important;
+        
+        .our-services .container #Marketing {
+            max-width: 310px !important;
+            transform: translateX(40px);
+    
+        }
+        .our-services .container #dev-apps {
+            max-width: 330px !important;
+            transform: translateX(23px);
+        }
+        .our-services .container #design {
+            max-width: 310px !important;
+            transform: translateX(40px);
+        }
+        .our-services .container #tech {
+            transform: translateX(266px) !important;
+            max-width: 585px !important;
+        }
+        .our-services .container #solve {
+            max-width: 480px;
+            transform: translateX(145px);
         }
         .our-services .container .develop {
             
@@ -521,33 +635,45 @@
 
     }
     @media(min-width:1400px){
-    .our-services .container .d-img {
-        width: 470px !important;
-        transform: translateX(128px) !important;
+    .our-services .container #developing {
+        transform: translateX(-20px);
     }
-
+    .our-services .container #marketing {
+        max-width: 310px !important;
+        transform: translateX(20px);
+    }
+    .our-services .container #dev-apps {
+        max-width: 330px !important;
+        transform: translateX(23px);
+    }
+    .our-services .container #design {
+        max-width: 310px !important;
+        transform: translateX(20px);
+    }
+    
+    .our-services .container #tech{
+        max-width: 585px;
+        transform: translateX(243px);
+    }
+    .our-services .container #solve {
+        max-width: 490px;
+        transform: translateX(122px);
+    }
     .our-services .container .card_body {
         width: 435px !important;
         
     }
+    
 
-
-
+    }
     /* end media 1400 */
-    }
-    .our-services .container .develop,
-    .our-services .container .d-img {
-        z-index: 3;
-    }
-
-    .our-services .container .develop, 
-    .our-services .container .d-img 
-    {
-        height: auto ;
-        overflow: hidden !important;
-    }
+   
     .our-services .container .develop {
         max-width: 275px;
+        height: auto;
+        height: auto ;
+        overflow: hidden !important;
+        z-index: 3;
     }
     .our-services .card_body {
         background-color: #fff;
@@ -573,8 +699,6 @@
         background-image: linear-gradient(white,white),
         linear-gradient(90deg, rgba(87,227,51,0.9051995798319328) 50%,
         rgba(13,214,223,0.9472163865546218) 69%)1 ;
-        background-clip: content-box ,border-box;
-        background-origin: border-box;
         border-radius: 22px;
         height: 45px;
         display: block;
@@ -585,6 +709,7 @@
         color: #000;
         line-height: 20px;
         font-size: 18px;
+        text-align: center;
         
     }
     .our-services .container .gradient-btn:hover {
@@ -608,6 +733,10 @@
     }
     
     /* responsive man img */
+    @media(max-width:575px){
+        .blog {
+            transform: translateY(-180px) !important;        }
+    }
     @media(min-width: 767px){
         .blog{
             transform: translateY(-270px);
@@ -620,6 +749,11 @@
             max-width: 250px !important;
             margin-bottom: 20px !important;
             
+    }
+    @media(max-width:1199px) {
+        .blog {
+            margin-top: 150px !important;
+        }
     }
     /* responsive card */
 

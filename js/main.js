@@ -4,13 +4,13 @@
   
      setTimeout(function() {
        loader.style.left = "0";
-     }, 2500);
+     }, 3000);
   
      window.addEventListener("DOMContentLoaded", function(event) {
        setTimeout(function() {
-         loader.style.left = "100%";
+         loader.style.left = "105%";
          document.body.classList.remove("spinner");
-       }, 3000);
+       }, 3500);
     });
    }
   
