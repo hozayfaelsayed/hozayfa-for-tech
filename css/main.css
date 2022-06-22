@@ -306,7 +306,7 @@
     /*start section 1 */
     .section1 {
         background-image: url("../img/section1.png");
-       background-size:  cover;
+       background-size:  cover !important;
        background-repeat: no-repeat;
        transform: translateY(-50px);
        min-height: 970px;
@@ -358,15 +358,16 @@
     .section1 .intro {
     transform: translateY(215px);
     }
-    @media(min-width:1400px){
+   
+    @media(min-width:1550px){
         .section1 {
-            min-height: 1350px;
+            min-height: 1010px;
         }
     }
     .section1 .img3 {
-        max-width: 650px;
+        max-width: 550px;
         height: auto;
-        width: 100%;
+        max-width: 100%;
 
     }
     .section1 .intro-text {
