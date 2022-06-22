@@ -796,6 +796,7 @@
     .blog .container .intro .card_body p {
         padding-top: 45px;
         color: blue;
+        font-weight: bold;
     }
     .blog .container .intro .card_body input {
         width: 355px;
@@ -957,11 +958,6 @@
     .footer .footer-span {
         color: blue;
     }
-
-
-
-
-
     .footer ul a li svg  {
         margin: 0 18px;
     }
