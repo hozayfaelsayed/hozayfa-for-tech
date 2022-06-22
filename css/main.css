@@ -250,8 +250,8 @@
 
     }
     .header .img1 {
-    width:100% ;
-    height: auto;
+        width:100% ;
+        height: auto;
         left: -9px;
         top: -63px;
         z-index: 1;
@@ -309,7 +309,7 @@
        background-size:  cover;
        background-repeat: no-repeat;
        transform: translateY(-50px);
-       min-height: 940px;
+       min-height: 970px;
 
     }
     @media(max-width:767px){
@@ -358,10 +358,12 @@
     .section1 .intro {
     transform: translateY(215px);
     }
+    
     .section1 .img3 {
+        max-width: 650px;
         height: auto;
-        width: 850px;
-        overflow: hidden;
+        width: 100%;
+
     }
     .section1 .intro-text {
         padding-right: 60px;
