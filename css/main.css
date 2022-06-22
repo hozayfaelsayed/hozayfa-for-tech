@@ -361,7 +361,10 @@
    
     @media(min-width:1550px){
         .section1 {
-            min-height: 1310px;
+            min-height: 1410px;
+        }
+        .section1 .intro {
+            transform: translateY(400px);
         }
     }
     .section1 .img3 {
