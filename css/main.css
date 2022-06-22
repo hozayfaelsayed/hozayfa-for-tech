@@ -14,7 +14,7 @@
         overflow-y: scroll;
         height: 100% !important;
         width: 100vw !important;  
-        
+        scroll-behavior: smooth;
     }
     .btn-pro {
         padding: 5px;
@@ -122,11 +122,23 @@
         transform: translate(24px, 0);
         }
     }
-    
-
-
-
-    /* end  */
+        /* end  */
+        /* start scroll top  */
+        .top {
+            position: fixed;
+            bottom: 25px;
+            right: -30px;
+            background-color: #a0c9fa;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.2s;
+          }
+          .top.show {
+            right: 20px;
+          }
+        /* end scroll top */
     /* start nav */
     nav  {
         font-size: 20px;
