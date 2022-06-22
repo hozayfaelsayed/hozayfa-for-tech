@@ -396,7 +396,7 @@
         background-image: url("../img/test22.svg");
         background-repeat: no-repeat;
         background-size: cover !important;
-        height: 1377px;
+        min-height: 1470px;
     }
     .our-services .container .heading h3  {
         color: blue;
