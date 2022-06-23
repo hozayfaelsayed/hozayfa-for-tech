@@ -149,7 +149,7 @@
         font-weight: bold;
         
     }
-    nav ul li a {
+    nav ul li  {
         cursor: pointer;
     }
     @media(max-width:992px){
