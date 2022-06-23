@@ -2,6 +2,7 @@
     html 
     { 
         margin-left: calc(100vw - 100%);
+        scroll-behavior: smooth;
     } 
     body {
         direction: rtl !important;
@@ -14,7 +15,6 @@
         overflow-y: scroll;
         height: 100% !important;
         width: 100vw !important;  
-        scroll-behavior: smooth;
     }
     i {
         cursor: pointer;
